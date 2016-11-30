@@ -24,7 +24,9 @@ class Welcome extends CI_Controller {
 		$this->load->model('publicacion');
 
 		$data['publicaciones'] = $this->publicacion->getPublications(10);
-
+		foreach ($data['publicaciones'] as $publicacion) {
+			$publicacion->images = $this->publicacion->getPublicationImages($publicacion->id);
+		}
 		$this->load->view('2index', $data);
 	}
 }

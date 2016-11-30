@@ -3,7 +3,7 @@
 
     <head>
 
-        <title>HATA - The Real Estate</title>
+        <title>SyG - Gestion Inmobiliaria</title>
 
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
@@ -23,7 +23,7 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700,500' rel='stylesheet' type='text/css'>
 
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="images/favicon.ico">
 
         <!--[if lt IE 9]>
             <script src="js/html5shiv.js"></script>
@@ -129,29 +129,29 @@
         <div class="flexslider" id="slider">
             <ul class="slides">
               <?foreach ($publicaciones as $publicacion):?>
-                <li>
-                    <img src="images/slider.jpg" class="img-responsive" alt="Slider Image" />
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="detail">
-                                    <div class="white">
-                                        <h2>House<br>with Ghosts</h2>
-                                        <span class="slide-location">South Beach, Miami (USA)</span>
-                                        <div class="bar"></div>
-                                        <span class="slide-price">$ 1 525 000</span>
-                                    </div>
-                                    <div class="red">
-                                        <span class="bath">3 Bathroom</span>
-                                        <span class="bed">2 Bedrooms</span>
-                                        <span class="gym">1 Gym</span>
-                                        <span class="pool">2 Pool</span>
+                <?if($publicacion->is_highlighted == 1): ?>
+                    <li>
+                        <img src="images/1/landing.jpg" class="img-responsive" alt="Slider Image" />
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="detail">
+                                        <div class="white">
+                                            <h2><? echo $publicacion->display_name; ?></h2>
+                                            <span class="slide-location"><? echo $publicacion->address ?></span>
+                                            <div class="bar"></div>
+                                            <span class="slide-price"><? echo "UF " . $publicacion->price ?></span>
+                                        </div>
+                                        <div class="red">
+                                            <span class="bath"><? echo $publicacion->num_dorm . " Dormitorios" ?></span>
+                                            <span class="bed"><? echo $publicacion->num_banos . " Baños" ?></spn>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </li>
+                    </li>
+                <?endif; ?>
               <?endforeach;?>
             </ul>
         </div>
@@ -169,21 +169,18 @@
                     <option>Tipo</option>
                 </select>
 
-                <select class="type">
+                <select class="cata">
+                    <option>Operación</option>
+                </select>
+
+                <!--<select class="type">
                     <option>Type</option>
                     <option>Buy</option>
                     <option>Sell</option>
                     <option>Rent</option>
-                </select>
+                </select>-->
 
-                <select class="type">
-                    <option>Type</option>
-                    <option>Buy</option>
-                    <option>Sell</option>
-                    <option>Rent</option>
-                </select>
-
-                <button type="button" class="btn"><i class="fa fa-search"></i>Buscar</button>
+                <button type="button" style="float: right;" class="btn"><i class="fa fa-search"></i>Buscar</button>
 
                 <div class="range">
                     <p>
@@ -193,7 +190,7 @@
                     <div id="price-range"></div>
                 </div>
 
-                <a href="#" class="adv-srch">Busqueda Avanzada</a>
+                <!--<a href="#" class="adv-srch">Busqueda Avanzada</a>-->
 
             </div>
         </div>
@@ -206,27 +203,24 @@
                   <div class="col-md-4 col-sm-6">
                       <div class="item">
                           <div class="item-header clearfix">
-                              <h3><a href="#">Los Angles Apartment</a></h3>
-                              <span class="favorite"><i class="fa fa-heart"></i>9</span>
+                              <h3><a href="#"><? echo $publicacion->display_name; ?></a></h3>
                           </div>
                           <figure>
-                              <img src="images/items/1.png" alt="" class="img-responsive">
-                              <span class="label sale">Sell</span>
+                              <img src=<? echo "images/" . $publicacion->images[0]->img_url; ?> alt="" class="img-responsive">
+                              <span class="label sale">Venta</span>
                               <div class="overlay">
-                                  <a href="#" class="btn btn-detail">Detail</a>
+                                  <a href="#" class="btn btn-detail">Detalles</a>
                               </div>
                           </figure>
                           <div class="item-detail">
                               <div class="left">
-                                  <span class="place"><i class="fa fa-map-marker"></i>Galtur (Austria)</span>
+                                  <span class="place"><i class="fa fa-map-marker"></i><? echo $publicacion->address; ?></span>
                                   <span class="bed">3</span>
                                   <span class="bath">2</span>
-                                  <span class="garage">2</span>
-                                  <span class="gym">1</span>
                               </div>
                               <div class="right">
-                                  <span class="area">134 m2</span>
-                                  <span class="price">$ 870000</span>
+                                  <span class="area"><? echo $publicacion->space . " m2"; ?></span>
+                                  <span class="price"><? echo "UF " . $publicacion->price; ?></span>
                               </div>
                           </div>
                       </div>
@@ -238,7 +232,7 @@
         <!-- ITEMS GRID -->
 
         <!-- FACTS -->
-        <div class="facts_wrap animated">
+        <!--<div class="facts_wrap animated">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -275,11 +269,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- FACTS -->
 
         <!-- ITEMS GRID -->
-        <div class="container">
+        <!--<div class="container">
             <div class="row">
 
                 <div class="col-md-4 col-sm-6">
@@ -457,11 +451,11 @@
                 </div>
 
             </div>
-        </div>
+        </div>-->
         <!-- ITEMS GRID -->
 
         <!-- BANNER -->
-        <div class="full-width-white design">
+        <!--<div class="full-width-white design">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 col-sm-5">
@@ -478,7 +472,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- BANNER -->
 
         <!-- BLOG -->
@@ -520,7 +514,7 @@
         <!-- BLOG -->
 
         <!-- BANNER -->
-        <div class="full-width personal-agent">
+        <!--<div class="full-width personal-agent">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-4">
@@ -538,11 +532,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- BANNER -->
 
         <!-- REVIEWS -->
-        <div class="full-width rewiews">
+        <!--<div class="full-width rewiews">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-4">
@@ -562,7 +556,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- REVIEWS -->
 
         <!-- CALL2ACTION -->
@@ -570,10 +564,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
-                        <h4>Want to sell you property? contact us now!</h4>
+                        <h4>¿Quiéres vender con nosotros? Contactanos!</h4>
                     </div>
                     <div class="col-md-3">
-                        <a href="contact.html" class="btn btn-danger">Submit Property</a>
+                        <a href="contact.html" class="btn btn-danger">Contacto</a>
                     </div>
                 </div>
             </div>
@@ -584,16 +578,16 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 copy-right">
-                        <p><img src="images/footer-logo.png" alt="Logo" class="img-responsive"> &copy; 2015 HATA — Real Estate Site Template</p>
+                    <div class="col-md-7 copy-right">
+                        <p><img src="images/logo.png" alt="Logo" class="img-responsive" style="margin-bottom: 30px; height: 60px !important;"> &copy; 2016 S &amp; G — Gestion Inmobiliaria</p>
                     </div>
-                    <div class="col-md-7">
-                        <ul>
+                    <div class="col-md-5">
+                        <!--<ul>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Properties</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">Team</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Contact Us</a></li>-->
                         </ul>
                     </div>
                 </div>

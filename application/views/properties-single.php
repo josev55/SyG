@@ -3,7 +3,7 @@
 
     <head>
 
-        <title>HATA - The Real Estate</title>
+        <title>SyG - Gestion Inmobiliaria</title>
 
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
@@ -34,29 +34,13 @@
     <body>
 
     <!-- TOP -->
-    <div class="top-bar">
-
-        <p class="text">
-            <a><i class="fa fa-map-marker"></i> 121 King Street, Melbourne Victoria 3000 Australia</a>
-            <a href="tel:+61383766284"><i class="fa fa-phone"></i> + 613 8376 6284</a>
-        </p>
-
-        <p class="social">
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-vimeo"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-skype"></i></a>
-        </p>
-
-    </div>
     <!-- TOP -->
 
         <!-- HEADER -->
         <header class="clearfix">
 
             <div class="logo">
-                <a href="#"><img src="images/logo.png" alt="HATA">HATA</a>
+                <a href="#"><img src="images/logo.png" alt="SyG" height="60"></a>
             </div>
 
             <nav class="navbar collapse" id="mobile-menu">
@@ -103,24 +87,6 @@
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
-
-            <div class="user">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <img src="images/avatar1.png" alt="User Photo">
-                    <span class="drop-arow"></span>
-                </a>
-                <ul class="dropdown-menu user-drop">
-                    <li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>
-                    <li><a href="#"><i class="fa fa-list"></i>My Properties</a></li>
-                    <li><a href="#"><i class="fa fa-sign-out"></i>Logout</a></li>
-                </ul>
-            </div>
-
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
 
         </header>
         <!-- HEADER -->
