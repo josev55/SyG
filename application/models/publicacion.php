@@ -6,6 +6,19 @@ class Publicacion extends CI_Controller {
         parent::__construct();
     }
 
+    public function getPublication($id) {
+
+        $this->db->select('*');
+        $this->db->from('publicaciones');
+        $this->db->where('id', $id);
+        $query = $this->db->get();
+
+        $results = $query->result();
+
+        return $results;
+
+    }
+
     public function getPublications($limit){
 
         if ($limit) {

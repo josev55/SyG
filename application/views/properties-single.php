@@ -10,15 +10,15 @@
 
         <script src="js/pace.js"></script>
 
-        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-        <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-        <link rel="stylesheet" href="css/jquery.selectBox.css" type="text/css">
-        <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
-        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-        <link rel="stylesheet" href="css/green.css" type="text/css">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
-        <link rel="stylesheet" href="css/responsive.css" type="text/css">
-        <link rel="stylesheet" href="css/pace-minimal.css">
+        <link rel="stylesheet" href=<? echo base_url("css/bootstrap.min.css"); ?> type="text/css">
+        <link rel="stylesheet" href=<? echo base_url("css/flexslider.css");?> type="text/css">
+        <link rel="stylesheet" href=<? echo base_url("css/jquery.selectBox.css");?> type="text/css">
+        <link rel="stylesheet" href=<? echo base_url("css/jquery-ui.css");?> type="text/css">
+        <link rel="stylesheet" href=<? echo base_url("css/font-awesome.min.css");?> type="text/css">
+        <link rel="stylesheet" href=<? echo base_url("css/green.css");?> type="text/css">
+        <link rel="stylesheet" href=<? echo base_url("css/style.css");?> type="text/css">
+        <link rel="stylesheet" href=<? echo base_url("css/responsive.css");?> type="text/css">
+        <link rel="stylesheet" href=<? echo base_url("css/pace-minimal.css");?>>
 
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700,500' rel='stylesheet' type='text/css'>
@@ -40,7 +40,7 @@
         <header class="clearfix">
 
             <div class="logo">
-                <a href="#"><img src="images/logo.png" alt="SyG" height="60"></a>
+                <a href="#"><img src=<? echo base_url("images/logo.png");?> alt="SyG" height="60"></a>
             </div>
 
             <nav class="navbar collapse" id="mobile-menu">
@@ -100,7 +100,7 @@
                         <div class="breadcrumbs">
                             <a href="index.html">Home</a>
                             <span class="sep">/</span>
-                            <span class="current">Properties List</span>
+                            <span class="current">ASDF</span>
                         </div>
                         <h2 class="page-title">All Properties</h2>
                     </div>
@@ -131,13 +131,13 @@
                     <!-- PROPERTY SLIDER -->
                     <div class="col-md-7 property-slider">
                         <figure>
-                            <img src="images/pro-big.jpg" alt="Image" class="img-responsive">
+                            <img src=<? echo base_url("images/pro-big.jpg");?> alt="Image" class="img-responsive">
                             <span class="label sale">Sale</span>
                         </figure>
                         <div class="thumbnails">
-                            <a href="#"><img src="images/pro-thumb1.jpg" alt="Thumbnils" class="img-responsive"></a>
-                            <a href="#"><img src="images/pro-thumb2.jpg" alt="Thumbnils" class="img-responsive"></a>
-                            <a href="#"><img src="images/pro-thumb3.jpg" alt="Thumbnils" class="img-responsive"></a>
+                            <a href="#"><img src=<? echo base_url("images/pro-thumb1.jpg");?> alt="Thumbnils" class="img-responsive"></a>
+                            <a href="#"><img src=<? echo base_url("images/pro-thumb2.jpg");?> alt="Thumbnils" class="img-responsive"></a>
+                            <a href="#"><img src=<? echo base_url("images/pro-thumb3.jpg");?> alt="Thumbnils" class="img-responsive"></a>
                         </div>
                     </div>
                     <!-- PROPERTY SLIDER -->
@@ -182,25 +182,25 @@
                 <div class="grid">
                     <div class="grid-sizer"></div>
                     <div class="grid-item grid-item-half">
-                        <a href="#"><img src="images/g13.jpg" alt=""><div class="overlay"></div></a>
-                        <a href="#"><img src="images/g11.jpg" alt=""><div class="overlay"></div></a>
-                        <a href="#"><img src="images/g12.jpg" alt=""><div class="overlay"></div></a>
+                        <a href="#"><img src=<? echo base_url("images/g13.jpg");?> alt=""><div class="overlay"></div></a>
+                        <a href="#"><img src=<? echo base_url("images/g11.jpg");?> alt=""><div class="overlay"></div></a>
+                        <a href="#"><img src=<? echo base_url("images/g12.jpg");?> alt=""><div class="overlay"></div></a>
                     </div>
                     <div class="grid-item">
-                        <a href="#"><img src="images/g14.jpg" alt=""><div class="overlay"></div></a>
-                        <a href="#"><img src="images/g15.jpg" alt=""><div class="overlay"></div></a>
+                        <a href="#"><img src=<? echo base_url("images/g14.jpg");?> alt=""><div class="overlay"></div></a>
+                        <a href="#"><img src=<? echo base_url("images/g15.jpg");?> alt=""><div class="overlay"></div></a>
                     </div>
                     <div class="grid-item">
-                        <a href="#"><img src="images/g16.jpg" alt=""><div class="overlay"></div></a>
-                        <a href="#"><img src="images/g17.jpg" alt=""><div class="overlay"></div></a>
+                        <a href="#"><img src=<? echo base_url("images/g16.jpg");?> alt=""><div class="overlay"></div></a>
+                        <a href="#"><img src=<? echo base_url("images/g17.jpg");?> alt=""><div class="overlay"></div></a>
                     </div>
                     <div class="grid-item">
-                        <a href="#"><img src="images/g18.jpg" alt=""><div class="overlay"></div></a>
-                        <a href="#"><img src="images/g19.jpg" alt=""><div class="overlay"></div></a>
+                        <a href="#"><img src=<? echo base_url("images/g18.jpg");?> alt=""><div class="overlay"></div></a>
+                        <a href="#"><img src=<? echo base_url("images/g19.jpg");?> alt=""><div class="overlay"></div></a>
                     </div>
                     <div class="grid-item grid-item-half">
-                        <a href="#"><img src="images/g20.jpg" alt=""><div class="overlay"></div></a>
-                        <a href="#"><img src="images/g13.jpg" alt=""><div class="overlay"></div></a>
+                        <a href="#"><img src=<? echo base_url("images/g20.jpg");?> alt=""><div class="overlay"></div></a>
+                        <a href="#"><img src=<? echo base_url("images/g13.jpg");?> alt=""><div class="overlay"></div></a>
                     </div>
                 </div>
             </div>
@@ -213,25 +213,25 @@
                     <div class="col-md-5 infra-elements">
                         <h5>Infrastructure Elements</h5>
                         <div class="element">
-                            <img src="images/element-bus.png" alt="">
+                            <img src=<? echo base_url("images/element-bus.png");?> alt="">
                             <h6>Bus Stop</h6>
                             <span class="walk">In 8 Minutes</span>
                             <a href="#" class="loc-marker"><i class="fa fa-map-marker"></i></a>
                         </div>
                         <div class="element">
-                            <img src="images/element-book.png" alt="">
+                            <img src=<? echo base_url("images/element-book.png");?> alt="">
                             <h6>The Great Library</h6>
                             <span class="walk">In 12 Minutes</span>
                             <a href="#" class="loc-marker"><i class="fa fa-map-marker"></i></a>
                         </div>
                         <div class="element">
-                            <img src="images/element-market.png" alt="">
+                            <img src=<? echo base_url("images/element-market.png");?> alt="">
                             <h6>Super Market</h6>
                             <span class="walk">In 2 Minutes</span>
                             <a href="#" class="loc-marker"><i class="fa fa-map-marker"></i></a>
                         </div>
                         <div class="element">
-                            <img src="images/element-school.png" alt="">
+                            <img src=<? echo base_url("images/element-school.png");?> alt="">
                             <h6>International School</h6>
                             <span class="cycling">In 13 Minutes</span>
                             <a href="#" class="loc-marker"><i class="fa fa-map-marker"></i></a>
@@ -244,7 +244,7 @@
                         <h5>Nearby Attractions</h5>
                         <div class="element">
                             <figure>
-                                <img src="images/nearby1.png" alt="Image" class="img-responsive">
+                                <img src=<? echo base_url("images/nearby1.png");?> alt="Image" class="img-responsive">
                             </figure>
                             <h6>Champs Elysees</h6>
                             <span class="car">In 14 Minutes</span>
@@ -252,7 +252,7 @@
                         </div>
                         <div class="element">
                             <figure>
-                                <img src="images/nearby2.png" alt="Image" class="img-responsive">
+                                <img src=<? echo base_url("images/nearby2.png");?> alt="Image" class="img-responsive">
                             </figure>
                             <h6>South Beach</h6>
                             <span class="car">In 20 Minutes</span>
@@ -260,7 +260,7 @@
                         </div>
                         <div class="element">
                             <figure>
-                                <img src="images/nearby3.png" alt="Image" class="img-responsive">
+                                <img src=<? echo base_url("images/nearby3.png");?> alt="Image" class="img-responsive">
                             </figure>
                             <h6>Ghosts and The Walking</h6>
                             <span class="car">In 24 Minutes</span>
@@ -278,7 +278,7 @@
                     <div class="row">
                         <div class="col-md-4 col-sm-4">
                             <figure>
-                                <img src="images/agent-pic.png" alt="Pic" class="img-responsive">
+                                <img src=<? echo base_url("images/agent-pic.png");?> alt="Pic" class="img-responsive">
                             </figure>
                         </div>
                         <div class="col-md-8 col-sm-8">
@@ -305,7 +305,7 @@
                                 <span class="favorite"><i class="fa fa-heart"></i>9</span>
                             </div>
                             <figure>
-                                <img src="images/items/7.png" alt="" class="img-responsive">
+                                <img src=<? echo base_url("images/items/7.png");?> alt="" class="img-responsive">
                                 <span class="label sale">Sell</span>
                                 <div class="overlay">
                                     <a href="#" class="btn btn-detail">Detail</a>
@@ -334,7 +334,7 @@
                                 <span class="favorite"><i class="fa fa-heart"></i>9</span>
                             </div>
                             <figure>
-                                <img src="images/items/8.png" alt="" class="img-responsive">
+                                <img src=<? echo base_url("images/items/8.png");?> alt="" class="img-responsive">
                                 <span class="label rent">Rent</span>
                                 <div class="overlay">
                                     <a href="#" class="btn btn-detail">Detail</a>
@@ -363,7 +363,7 @@
                                 <span class="favorite"><i class="fa fa-heart"></i>9</span>
                             </div>
                             <figure>
-                                <img src="images/items/9.png" alt="" class="img-responsive">
+                                <img src=<? echo base_url("images/items/9.png");?> alt="" class="img-responsive">
                                 <span class="label rent">Rent</span>
                                 <div class="overlay">
                                     <a href="#" class="btn btn-detail">Detail</a>
@@ -392,7 +392,7 @@
                                 <span class="favorite"><i class="fa fa-heart"></i>9</span>
                             </div>
                             <figure>
-                                <img src="images/items/10.png" alt="" class="img-responsive">
+                                <img src=<? echo base_url("images/items/10.png");?> alt="" class="img-responsive">
                                 <span class="label hot">Hot</span>
                                 <div class="overlay">
                                     <a href="#" class="btn btn-detail">Detail</a>
@@ -421,7 +421,7 @@
                                 <span class="favorite"><i class="fa fa-heart"></i>9</span>
                             </div>
                             <figure>
-                                <img src="images/items/11.png" alt="" class="img-responsive">
+                                <img src=<? echo base_url("images/items/11.png");?> alt="" class="img-responsive">
                                 <span class="label rent">Rent</span>
                                 <div class="overlay">
                                     <a href="#" class="btn btn-detail">Detail</a>
@@ -450,7 +450,7 @@
                                 <span class="favorite"><i class="fa fa-heart"></i>9</span>
                             </div>
                             <figure>
-                                <img src="images/items/12.png" alt="" class="img-responsive">
+                                <img src=<? echo base_url("images/items/12.png");?> alt="" class="img-responsive">
                                 <span class="label sale">Sell</span>
                                 <div class="overlay">
                                     <a href="#" class="btn btn-detail">Detail</a>
@@ -498,7 +498,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 copy-right">
-                        <p><img src="images/footer-logo.png" alt="Logo" class="img-responsive"> &copy; 2015 HATA — Real Estate Site Template</p>
+                        <p><img src=<? echo base_url("images/footer-logo.png");?> alt="Logo" class="img-responsive"> &copy; 2015 HATA — Real Estate Site Template</p>
                     </div>
                     <div class="col-md-7">
                         <ul>
