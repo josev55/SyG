@@ -45,46 +45,11 @@
 
             <nav class="navbar collapse" id="mobile-menu">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="/">Inicio</a></li>
                     <li class="dropdown active">
                         <a class="dropdown-toggle" data-toggle="dropdown">Properties</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="properties-grid.html">Properties Grid</a></li>
-                            <li><a href="properties-list.html">Properties List</a></li>
-                            <li><a href="properties-map.html">Properties Map</a></li>
-                            <li><a href="properties-single.html">Properties Single</a></li>
-                        </ul>
                     </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown">Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="services.html">Services Page</a></li>
-                            <li><a href="services-single.html">Preparation of Documents</a></li>
-                            <li><a href="services-single.html">Design Projects</a></li>
-                            <li><a href="services-single.html">Repair of Apartments</a></li>
-                            <li><a href="services-single.html">Utility Services</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown">Page</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="team-single.html">Team Single</a></li>
-                            <li><a href="typography.html">Typography</a></li>
-                            <li><a href="error.html">404 Error</a></li>
-                            <li><a href="offline.html">Site Offline</a></li>
-                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown">Blog</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="blog.html">Blog Posts</a></li>
-                            <li><a href="blog-post.html">Single Post</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
                 </ul>
             </nav>
 
@@ -98,11 +63,11 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="breadcrumbs">
-                            <a href="index.html">Home</a>
+                            <a href="/">Inicio</a>
                             <span class="sep">/</span>
-                            <span class="current">ASDF</span>
+                            <span class="current">Propiedades</span>
                         </div>
-                        <h2 class="page-title">All Properties</h2>
+                        <h2 class="page-title"><? echo $publicacion->display_name; ?></h2>
                     </div>
                 </div>
             </div>
@@ -114,12 +79,6 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="property-filter">
-                            <a href="#" class="active">Overview</a>
-                            <a href="#">Living Room</a>
-                            <a href="#">I Bedroom</a>
-                            <a href="#">II Bedroom</a>
-                            <a href="#">Bathroom</a>
-                            <a href="#">Kitchen</a>
                             <a href="#" class="view-map">View on Map</a>
                         </div>
                     </div>
@@ -131,7 +90,7 @@
                     <!-- PROPERTY SLIDER -->
                     <div class="col-md-7 property-slider">
                         <figure>
-                            <img src=<? echo base_url("images/pro-big.jpg");?> alt="Image" class="img-responsive">
+                            <img src=<? echo base_url("images/".$images[0]->img_url);?> alt="Image" class="img-responsive">
                             <span class="label sale">Sale</span>
                         </figure>
                         <div class="thumbnails">
@@ -178,7 +137,7 @@
             </div>
 
             <!-- GALLERY -->
-            <div class="full-width gallery">
+            <!--<div class="full-width gallery">
                 <div class="grid">
                     <div class="grid-sizer"></div>
                     <div class="grid-item grid-item-half">
@@ -203,7 +162,7 @@
                         <a href="#"><img src=<? echo base_url("images/g13.jpg");?> alt=""><div class="overlay"></div></a>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <!-- GALLERY -->
 
             <div class="container">
@@ -273,7 +232,7 @@
             </div>
 
             <!-- BANNER -->
-            <div class="full-width personal-agent">
+            <!--<div class="full-width personal-agent">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4">
@@ -291,11 +250,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <!-- BANNER -->
 
             <!-- ITEMS GRID -->
-            <div class="container">
+            <!--<div class="container">
                 <div class="row">
 
                     <div class="col-md-4 col-sm-6">
@@ -473,7 +432,7 @@
                     </div>
 
                 </div>
-            </div>
+            </div>-->
             <!-- ITEMS GRID -->
 
         </div>
@@ -483,10 +442,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
-                        <h4>Want to sell you property? contact us now!</h4>
+                        <h4>¿Quiéres vender con nosotros? Contactanos!</h4>
                     </div>
                     <div class="col-md-3">
-                        <a href="contact.html" class="btn btn-danger">Submit Property</a>
+                        <a href="contact.html" class="btn btn-danger">Contacto</a>
                     </div>
                 </div>
             </div>
@@ -498,7 +457,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 copy-right">
-                        <p><img src=<? echo base_url("images/footer-logo.png");?> alt="Logo" class="img-responsive"> &copy; 2015 HATA — Real Estate Site Template</p>
+                        <p><img src=<? echo base_url("images/logo.png") ?> alt="Logo" class="img-responsive" style="margin-bottom: 30px; height: 60px !important;"> &copy; 2016 S &amp; G — Gestion Inmobiliaria</p>
                     </div>
                     <div class="col-md-7">
                         <ul>

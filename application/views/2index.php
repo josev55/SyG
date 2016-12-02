@@ -61,7 +61,7 @@
 
             <nav class="navbar collapse" id="mobile-menu">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="active"><a href="/">Inicio</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">Properties</a>
@@ -72,7 +72,7 @@
                             <li><a href="properties-single.html">Properties Single</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <!--<li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">Services</a>
                         <ul class="dropdown-menu">
                             <li><a href="services.html">Services Page</a></li>
@@ -100,7 +100,7 @@
                             <li><a href="blog-post.html">Single Post</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>-->
                 </ul>
             </nav>
 <!--
@@ -209,7 +209,7 @@
                               <img src=<? echo "images/" . $publicacion->images[0]->img_url; ?> alt="" class="img-responsive">
                               <span class="label sale">Venta</span>
                               <div class="overlay">
-                                  <a href="#" class="btn btn-detail">Detalles</a>
+                                  <a href=<? echo "propiedades/simple/" . $publicacion->id;?> class="btn btn-detail">Detalles</a>
                               </div>
                           </figure>
                           <div class="item-detail">
